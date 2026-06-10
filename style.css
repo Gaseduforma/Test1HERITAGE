@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: rgba(211, 178, 89, 0.98);
+    padding: 10px; 20px
+}
+
+li{
+    margin: 20px;
+    font-size: 20px;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin:1px ;
+}
+
+.texte{
+    display: flex;
+    align-items: end;
+    justify-content:right;
+}
+
+ .defilant-conteneur {
+  overflow: hidden; /* Cache le texte qui dépasse */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  width: 100%;
+  color: rgb(217, 15, 15);
+}
+
+
+.defilant-texte {
+  display: inline-block;
+  padding-left: 100%;
+  animation: defilement 15s linear infinite;
+  font-size: 20px;
+}
+
+@keyframes defilement {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
